@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0e0e0; /* Light grey background */
+            margin: 0;
+            padding: 0;
+        }
+        .success-message {
+            text-align: center;
+            font-size: 24px;
+            color: green;
+            margin-bottom: 20px;
+        }
+        .tick-mark {
+            font-size: 24px; /* Adjust size as needed */
+        }
+        /* Use Font Awesome for the tick mark */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+        /* Styling for the links */
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #0066A2; /* Blue color for the links */
+        }
+        .success-message {
+    text-align: center;
+    font-size: 24px;
+    color: green;
+    margin-bottom: 20px;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0066A2; /* Blue color for the links */
+    border-bottom: 2px solid #0066A2; /* Underline effect */
+    padding-bottom: 2px; /* Space between text and underline */
+}
+
+.links a.highlight {
+    font-weight: bold; /* Make the links stand out */
+}
+
+.tick-mark {
+        font-size: 24px; /* Adjust size as needed */
+        color: #0066A2; /* Blue color for the tick mark */
+        animation: bounce 1s infinite; /* Apply the bounce animation */
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+    .success-checkmark {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 2px solid green; /* Green border */
+            border-radius: 50%; /* Make it round */
+            background-color: white; /* Background color */
+        }
+
+        .success-checkmark::after {
+            content: '✔'; /* Checkmark symbol */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: green; /* Green color for the checkmark */
+            font-size: 24px; /* Adjust size as needed */
+        }        
+    </style>
+</head>
+<body>
+    <div class="success-message">
+        You have successfully registered for the state level project exhibition.<div class="success-checkmark"></div> <br>Please check your mail for  details. 
+        
+    </div>
+    <div class="links">
+        <a href="https://chat.whatsapp.com/GXNvsXcIlPKKFPGB2p0PYz" target="_blank" class="highlight">Join our WhatsApp group</a>
+        <a href="https://drive.google.com/file/d/1CUuOFJkoQXI565fKft1vRXCUOgFNrS9p/view?usp=sharing" target="_blank" class="highlight">Exhibition Details</a>
+    </div>
+    
+</body>
+</html>

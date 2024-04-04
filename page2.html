@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Project Theme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0e0e0; /* Light grey background */
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        form {
+            padding: 20px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        input[type="file"] {
+            margin-top: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .error-message {
+            color: red;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+        .required-star::after {
+            content: "*";
+            color: red;
+        }
+        .success-message {
+            display: none;
+            text-align: center;
+            font-size: 24px;
+            color: green;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .tick-mark {
+            display: inline-block;
+            animation: rotate 2s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .back-button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark grey text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #0066A2; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.success-message {
+    display: none; /* Initially hidden */
+    text-align: center;
+    font-size: 24px;
+    color: green;
+    animation: fadeIn 2s;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; /* Center the text */
+    
+}
+
+/* Other styles remain unchanged */
+
+.success-message {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    color: green;
+    animation: fadeIn 2s;
+}
+
+.tick-mark {
+    display: inline-block;
+    animation: rotate 2s linear infinite;
+    font-size: 24px; /* Adjust size as needed */
+}
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pay{
+    font-size: 20px
+}
+
+
+/* Use Font Awesome for the tick mark */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="projectForm">
+            <a href="index.html" class="back-button">Back</a>
+            <h2>Select Project Theme</h2>
+            <label for="projectTheme" class="required-star">Theme of the Project</label>
+            <select id="projectTheme" name="projectTheme" required>
+                <option value="">Select a theme</option>
+                <option value="ai_ml">Artificial Intelligence and Machine Learning</option>
+                <option value="cloud_computing">Cloud Computing</option>
+                <option value="iot_applications">IOT and Applications</option>
+                <option value="cyber_security">Cyber Security and Network</option>
+                <option value="iot_applications_2">IOT and its Applications</option>
+                <option value="blockchain">Blockchain Technology</option>
+                <option value="computer_networks">Computer Networks and Security</option>
+            </select>
+            <div id="projectTheme-error" class="error-message hidden"></div>
+            <label for="projectTitle" class="required-star">Title of the Project</label>
+            <input type="text" id="projectTitle" name="projectTitle" placeholder="Title of the Project" required>
+            <div id="projectTitle-error" class="error-message hidden"></div>
+            
+            <p class="pay"><b>Payment Qr Code [ 300 Ruppes ]</b> </p>
+            <img src="clglogo.jpeg" alt="paymentScreenshot"><br>
+            <label for="paymentScreenshot" class="required-star">Upload the Payment Screenshot</label>
+            <input type="file" id="paymentScreenshot" name="paymentScreenshot" required>
+            <div id="paymentScreenshot-error" class="error-message hidden"></div>
+            
+            <input type="submit" value="Submit" id="submit-button" class="submit-button">
+        </form>
+    </div>
+    <script>
+    document.getElementById('projectForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Clear all form fields
+    this.reset();
+
+    // Redirect to a new page
+    window.location.href = 'success.html';
+});
+
+
+
+        
+    </script>
+</body>
+</html>

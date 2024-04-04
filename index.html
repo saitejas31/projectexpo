@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-size: 80px;">State Level Project Exhibition</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px);
+            z-index: -1;
+        }
+        header, footer {
+            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .landing-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            padding: 20px;
+            z-index: 1; /* Ensure content is above the background */
+        }
+        h1 {
+            font-size: 3em; /* Larger font size for the title */
+            margin-bottom: 20px;
+        }
+        .start-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .details {
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto; /* Center the details */
+        }
+        .bold-section {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* Adjust font size for smaller screens */
+            }
+            .details {
+                padding: 0 20px; /* Add padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h2>State Level Project Exhibition</h2>
+    </header>
+    <div class="landing-page">
+        <h1>Welcome to the Exhibition</h1>
+        
+        <div class="details">
+            <p>Advances in Science & Technology have been the most important phenomena of our age, facilitating the development of Information Science as a foundation for human knowledge...</p>
+            <p class="bold-section">DEPARTMENT OVERVIEW</p>
+            <p>The Information Science & Engineering department aims to impart the foundational and dedicated skills in design, programming, user interface, etc...</p>
+            <p class="bold-section">VISION of the Dept</p>
+            <p>To develop competent professionals with strong fundamentals in Information Science and Engineering, interdisciplinary research and ethical values for the betterment of the society.</p>
+            <p class="bold-section">MISSION of the dept</p>
+            <p>M1 - To establish a transformational learning ambience with good infrastructure facilities to impart knowledge and the necessary skill set to produce competent professionals.</p>
+            <p>M2 - To create a new generation of engineers who excel in their career with leadership/entrepreneur qualities.</p>
+            <p>M3 - To promote sustained research and innovation with an emphasis on ethical values.</p>
+            <p class="bold-section">Coordinators:</p>
+            <p>Dr. K S Ananda Kumar, Associate Professor, Dept of ISE, Atria Institute of Technology <br> , Mob: 9916778008</p>
+            <p>Dr. Jyoti Metan, Associate Professor, Dept of ISE, Atria Institute of Technology <br> , Mob: 9901499699</p>
+            <p class="bold-section">Organizing Committee</p>
+            <p>Prof. Asha M L, Asst. Prof, Dept of ISE</p>
+            <p>Prof. Asma Begum S, Asst. Prof, Dept of ISE</p>
+            <p>Prof. Chaitanya V, Asst. Prof, Dept of ISE</p>
+            <p>Prof. Veena S, Asst. Prof, Dept of ISE</p>
+            <p>Prof. Rajani S P, Asst. Prof, Dept of ISE</p>
+            <p>Prof. Harini S, Asst. Prof, Dept of ISE</p>
+
+            <a href="details.html" class="start-button">Start Registration</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 State Level Project Exhibition. All rights reserved.</p>
+    </footer>
+</body>
+</html>
