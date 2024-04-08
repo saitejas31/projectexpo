@@ -11,13 +11,13 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
+            background-color: #f0f0f0; /* Light grey background */
         }
         
         .background {
             position: absolute;
             width: 100%;
             height: 100%;
-            /* Replace with your background image path */
             background-size: cover;
             background-position: center;
             filter: blur(10px);
@@ -41,6 +41,7 @@
         h1 {
             font-size: 3em; /* Larger font size for the title */
             margin-bottom: 20px;
+            color: #0056b3; /* Blue color for the title */
         }
         .start-button {
             display: inline-block;
@@ -50,17 +51,85 @@
             text-decoration: none;
             border-radius: 5px;
             margin-bottom: 20px;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+        .start-button:hover {
+            background-color: #007acc; /* Darker blue on hover */
         }
         .details {
             font-size: 1.1em;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto; /* Center the details */
+            color: #333; /* Dark grey text */
         }
         .bold-section {
             font-weight: bold;
             margin-top: 20px;
+            color: #0056b3; /* Blue color for bold sections */
         }
+        .contact-section {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section h2 {
+            margin-bottom: 10px;
+        }
+        .contact-section address {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .registration-section {
+            background-color: #f0f0f0; /* Light grey background */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center the text */
+        }
+
+        .registration-section h2 {
+            margin-bottom: 10px;
+        }
+
+        .registration-section iframe {
+            display: block; /* Center the iframe */
+            margin: 0 auto;
+        }
+
+        .container {
+            background-color: #f0f0f0; /* Light grey background to match the page */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+            text-align: center; /* Center the text */
+        }
+
+        .container h1 {
+            font-size: 2em; /* Adjust font size to match the rest of the page */
+            color: #0056b3; /* Blue color for the title */
+            margin-bottom: 20px;
+        }
+
+        .container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0056b3; /* Blue background for the link */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .container a:hover {
+            background-color: #007acc; /* Darker blue on hover */
+        }
+
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2em; /* Adjust font size for smaller screens */
@@ -69,6 +138,52 @@
                 padding: 0 20px; /* Add padding for smaller screens */
             }
         }
+        .contact-section {
+    background-color: #fff; /* White background for contrast */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text */
+    font-family: 'Quicksand', sans-serif; /* Modern font for a fresh look */
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+    color: #0056b3; /* Blue color for the title */
+}
+
+.contact-section address {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333; /* Dark grey text */
+}
+
+.contact-section a {
+    color: #0056b3; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-section a:hover {
+    color: #007acc; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 10px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .contact-section address {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -81,6 +196,15 @@
         
         <div class="details">
             <p>Advances in Science & Technology have been the most important phenomena of our age, facilitating the development of Information Science as a foundation for human knowledge...</p>
+            <!-- Exhibition Details Section -->
+            <p class="bold-section">Exhibition Details:</p>
+            <p>We are excited to announce that the State Level Project Exhibition will take place on April 30, 2024. This event is a significant opportunity for participants to showcase their projects and engage with the broader community of Science & Engineering.</p>
+            <p class="bold-section">Important Dates and Information:</p>
+            <p><strong>Date:</strong> April 30, 2024</p>
+            <p><strong>Eligibility:</strong> Please ensure your project falls within the eligible domains for the exhibition.</p>
+            <p><strong>Refreshments:</strong> We will be providing light refreshments to keep you energized and engaged throughout the event.</p>
+            <p><strong>Participation Certificates:</strong> Upon successful participation, each participant will receive a hard copy of their participation certificate. These certificates can be included in your final project report, adding a valuable accolade to your academic achievements.</p>
+            <p><strong>Guide Accompaniment:</strong> If your guide is accompanying you, we will provide both participation and attendance certificates, acknowledging the significant role your guide plays in your academic journey.</p>
             <p class="bold-section">DEPARTMENT OVERVIEW</p>
             <p>The Information Science & Engineering department aims to impart the foundational and dedicated skills in design, programming, user interface, etc...</p>
             <p class="bold-section">VISION of the Dept</p>
@@ -100,7 +224,30 @@
             <p>Prof. Rajani S P, Asst. Prof, Dept of ISE</p>
             <p>Prof. Harini S, Asst. Prof, Dept of ISE</p>
 
-            <a href="details.html" class="start-button">Start Registration</a>
+            <!-- Add this section above the contact-section div -->
+            <!-- <div class="registration-section">
+                <h2>Please Find the Link Below for Registration</h2>
+                <p>Click the button below to register for the State Level Project Exhibition.</p>
+                <!-- Replace the URL in the src attribute with your Google Form URL -->
+                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfuuPPxASIn32h9sTWXA2a5nXs23ivgWrubrlNgr8zkYg5JUQ/viewform?usp=sf_link" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div> -->
+            <div class="container">
+                <h1>Please Fill The Form to Participate</h1>
+                <!-- Replace the href attribute value with your Google Form's URL -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuuPPxASIn32h9sTWXA2a5nXs23ivgWrubrlNgr8zkYg5JUQ/viewform?usp=sf_link" target="_blank">Fill out the form here</a>
+            </div>
+
+             <!-- Contact Section -->
+            <div class="contact-section">
+                <h2>Contact Us</h2>
+                <address>
+                    For any Details or trouble in registration, please contact:<br>
+                    Sai Tejas Kr - <a href="tel:8660154641">8660154641</a> <br>
+                    Abhilash - <a href="tel:6363286861">6363286861</a>
+                </address>
+            </div>
+            
+            
         </div>
     </div>
     <footer>
